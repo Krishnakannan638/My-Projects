@@ -1,0 +1,96 @@
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+
+.logo{
+    text-align: left;
+}
+.nav-heading h1{
+    text-align: right;
+}
+.navbar-menu{
+   
+    flex-direction: row;
+    justify-content: flex-end;
+    
+}
+.navbar-menu a:first-child{
+    background-color: #35C5D8;
+    border-radius: 10px;
+}
+.navbar-menu a{
+    margin-right: 8px;
+  
+}
+/* profile */
+.profile-des p{
+   
+    width: 50%;
+    margin: auto;
+    margin-bottom: 20px;
+
+}
+img.img2{
+   width: 80%;
+    transition: .3s;
+    height: 400px;
+}
+span{
+    font-size: 25x;
+    border: 0;
+}
+/* about me */
+
+.detailMe{
+    width: 50%;
+    float:right;
+}
+.imadeprofile {
+    width: 50%;
+    float:left;
+}
+.imadeprofile img{
+    height: 300px;
+    width: 300px;
+    margin-top: 100px;
+}
+.detailMe p{
+    text-align: left;
+}
+
+/* card section */
+.professional-experience{
+    padding: 1%;
+}
+.achivement{
+    padding-right: 50px;
+}
+.contact button {
+  width: 100px;
+}
+.contact-link{
+    position: relative;
+}
+.mediadutton{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,50%);
+}
+.footer-manue a{
+    display: inline-block;
+    font-size: 1rem;
+   
+}
+.footer-desc{
+    padding-top: 25px;
+}

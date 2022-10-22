@@ -1,0 +1,388 @@
+*{
+    box-sizing: border-box;
+    font-family:Georgia, 'Times New Roman', Times, serif
+}
+body{
+    margin: 0;
+
+}
+
+/* navbar section */
+
+h1{
+    font-size: 2.5rem;
+    text-align: center;
+    color: white;
+    margin: 0;
+}
+
+.dotted{
+    border: dotted 5px;
+    border-bottom: none;
+    margin: 20px auto;
+    width: 70px;
+
+}
+a{
+    color: white;
+    font-size: 1.2rem;
+    text-decoration: none;
+}
+
+[class*="col-"]{
+    float: left;
+    padding: 10px;
+}
+/* for mobile */
+[class*="col-"]{
+    width: 100%;
+}
+
+.navbar{
+    background:linear-gradient(to right,blue,rgb(78, 107, 168));
+    padding: 1% 7%;
+    text-align: center;
+}
+.navbar::after{
+    content: "";
+    clear: both;
+    display: table;
+}
+.navbar-menu{
+    display: flex;
+    flex-direction: column;
+    text-transform: uppercase;
+}
+.navbar-menu a{
+    margin: 7px 0;
+    padding: 10px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.navbar-menu a:hover{
+    background:linear-gradient(to right,rgb(224, 8, 188),pink);
+    border-radius: 10px;
+    transition: .2s;
+}
+img.logo-img {
+    width: 80px;
+    clip-path: circle(50%);
+
+}
+.navbar-menu a:first-child{
+    background:linear-gradient(to right,rgb(224, 8, 188),pink);
+    border-radius: 10px;
+}
+.navbar-menu a:hover{
+    color: yellow;
+}
+
+ /* Profile section */
+
+ p{
+     font-size: 1.2rem;
+     text-align:justify
+ }
+ .profile{
+     text-align: center;
+     position: relative;
+     padding: 100px 20px;
+ }
+ img.img1{
+     width: 300px;
+     height: auto;
+     border-radius: 100%;
+     border: 3px solid;
+     transition: .5s;
+ }
+ img.img2{
+    width: 425px;
+    height: auto;
+    transition: .3s;
+   
+}
+.profile-des h1{
+    color:black;
+    margin: 30px 0;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+}
+img.img1:hover{
+    transform: scale(1.05);
+    margin-bottom: 10px;
+}
+img.img2:hover{
+    transform: scale(1.05);
+   margin-bottom: 3px;
+}
+.profile-des p{
+    color:gray;
+    text-align: center;
+    width: 91%;
+    margin-bottom: 30px;
+}
+span{
+    display: block;
+    font-style: italic;
+    font-size: 18x;
+    font-weight: bold;
+    margin-top: 5px;
+}
+/* about me */
+.abiutMe{
+    background:linear-gradient(to right,rgb(26, 12, 228),rgb(88, 16, 204));
+    padding: 1% 7%;
+    text-align: center;
+    color: white;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.abiutMe h2{
+    font-size: 1.5rem;
+    text-align: center;
+}
+.abiutMe::after{
+    content: '';
+    clear: both;
+    display: block;
+}
+.imadeprofile img{
+   
+    border: 5px solid seashell;
+    border-radius: 50%;
+    width: 200px;
+}
+.detailMe p{
+    text-align: center;
+}
+.detailMe a{
+    font-size: 1.2rem;
+}
+.cvbutton{
+    background-color:turquoise;
+    color:rgb(0, 0, 0);
+    border: none;
+    border-radius: 12px;
+    padding: 10px 15px;
+    cursor: pointer;
+    outline:none;
+    margin: 10px;
+    font-size: 18px;
+}
+/* card section */
+.professional-experience{
+    padding: 1% 0;
+}
+.professional-experience .card{
+    background-color: #ee9f76;
+    border-radius: 5px;
+    padding: 10px;
+    transition: .3s;
+    height: 700px;
+}
+.professional-experience .card:hover{
+    box-shadow: 0px 4px 8px black;
+}
+
+.card-icons{
+    text-align: center;
+}
+.card-icons img{
+    width: 120px;
+    margin-top: 20px;
+    border: 3px solid white;
+    border-radius: 50%;
+
+}
+.card-title{
+    text-align: center;
+}
+.card-title h2{
+    background-color: #616161;
+    color: white;
+    padding: 10px;
+    font-family:Arial, Helvetica, sans-serif;
+}
+.skills-conainer{
+    padding-right: 45px;
+}
+
+.skills-conainer  li{
+    font-weight: bold;
+    margin: 30px 10px;
+    list-style: none;
+    position: relative;
+    text-transform: uppercase;
+}
+
+.skills-conainer li::before{
+
+    content: '';
+    position: absolute;
+    background-color:rgba(101, 123, 194, 0.349);
+    top: calc(100% + 5px);
+    width: 100%;
+    left: 0;
+    height: 10px;
+    border-radius: 1000px;
+
+}
+
+.skills-conainer li::after{
+    content: '';
+    position: absolute;
+    background-color:rgb(25, 0, 255);
+    top: calc(100% + 5px);
+    left: 0;
+    width: 0%;
+    height: 10px;
+    border-radius: 1000px;
+
+    animation-duration: 3s;
+    animation-direction:inherit;
+    animation-timing-function: inherit;
+    animation-fill-mode: forwards;
+    animation-iteration-count: 15;
+   
+}
+
+.html::after{
+    animation-name: html;
+}
+@keyframes  html{
+    to{
+        width: 98%;
+    }
+}
+.css::after{
+    animation-name: css;
+}
+@keyframes  css{
+    to{
+        width: 90%;
+    }
+}
+.python::after{
+    animation-name: python;
+}
+@keyframes  python{
+    to{
+        width: 70%;
+    }
+}
+.js::after{
+    animation-name: js;
+}
+@keyframes  js{
+    to{
+        width: 50%;
+    }
+}
+.java::after{
+    animation-name: java;
+}
+@keyframes  java{
+    to{
+        width: 30%;
+    }
+}
+.c::after{
+    animation-name: c;
+}
+@keyframes  c{
+    to{
+        width: 30%;
+    }
+}
+.professional-experience::after{
+    content: '';
+    display: table;
+    clear: both;
+}
+
+/* acivement section  */
+.achivement-contact{
+    padding: 1% 7%;
+    background:linear-gradient(to right,rgb(228, 21, 166),rgb(27, 122, 211));
+    color: white;
+    text-align: center;
+}
+.achivement-contact::after{
+    content: '';
+    display: table;
+    clear: both;
+}
+
+.contact{
+    text-align: center;
+}
+.contact input, textarea{
+    width: 100%;
+    padding: 10px;
+    text-align: center;
+    font-size: 1rem;
+    border: none;
+    border-radius: 10px;
+    resize: none;
+}
+.contact  button{
+    border:none ;
+    border-radius: 12px;
+    background-color:rgb(18, 77, 78)
+    ;
+    color: white;
+    padding: 10px 20px;
+    cursor: pointer;
+    margin: 10px;
+
+}
+.mediadutton button{
+    border-radius: 25px;
+}
+.mediadutton img{
+    margin: 15px;
+    border-radius: 10px;
+}
+.mediadutton .facebook{
+    background-color: rgb(255, 255, 255);
+    color: white;
+ 
+}
+.mediadutton img:hover{
+    background-color: rgb(0, 255, 200);
+}
+.mediadutton .ins{
+    background-color:#fbad50;
+}
+.mediadutton .link{
+    background-color: #4cc0ff;
+}
+.mediadutton .twiter{
+    background-color: rgb(0 248 255);
+}
+.footer::after{
+    content: '';
+    clear: both;
+    display: block;
+}
+.footer{
+    background-color: black;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    font-size: 0.8rem;
+}
+.footer-manue a{
+    display: block;
+    font-family:initial;
+    font-weight: bold;
+    margin: 10px 0;
+    font-size: 1.2rem;
+    border-radius: 10px;
+    padding: 15px;
+}
+.footer-manue a:hover{
+    background-color: rgb(66, 49, 49);
+}
+.footer-desc{
+    color:aliceblue;
+    font-size: 1rem;
+}
